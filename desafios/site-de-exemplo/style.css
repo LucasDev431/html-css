@@ -1,0 +1,59 @@
+@charset "UTF-8";
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Minecrafter';
+    src: url('fonts/Minecraftia-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #012030;
+}
+
+main {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000f16af;
+    background-color: white;
+    width: 75%;
+    padding: 10px;
+    margin: auto;
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+h1 {
+    font-family: 'Minecrafter';
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #2a796d;
+    background-color: #45C4B0;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: #B33F00;
+}
+
+#anotações {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000f16af;
+    background-color: white;
+    height: 200px;
+    width: 500px;
+    padding: 10px;
+    margin: 10px 11.7%;
+}
+
+#ovelha {
+    margin: 10px;
+
+}
+#anotações, #ovelha {
+    display: inline-block;
+}
+
