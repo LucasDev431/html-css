@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Magazine</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .main-menu {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px 0;
+        }
+        .main-menu ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+        .main-menu ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+        .main-menu ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            display: block;
+        }
+        .main-menu ul li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background: #444;
+            list-style: none;
+            top: 100%;
+            left: 0;
+            padding: 0;
+            margin: 0;
+            width: 150px;
+        }
+        .dropdown-menu li {
+            margin: 0;
+        }
+        .dropdown-menu li a {
+            padding: 10px;
+            display: block;
+            color: white;
+        }
+        .dropdown-menu li a:hover {
+            background: #555;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+        .search-bar input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        .search-bar button {
+            background: #555;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">VOICE</div>
+            <nav class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+            </nav>
+        </div>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Health</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Posts ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Latest Posts</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Editor's Pick</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">More ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Archives</a></li>
+                        <li><a href="#">Features</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li class="search-bar">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button><i class="fas fa-search"></i></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="featured-articles">
+            <article class="article">
+                <img src="img/tech.jpg" alt="Technology">
+                <span class="tag technology">Technology</span>
+                <h2>The Features of the Best Ergonomic Keyboard</h2>
+                <p>1 week ago</p>
+            </article>
+            <article class="article">
+                <img src="img/environment.jpg" alt="Environment">
+                <span class="tag environment">Environment</span>
+                <h2>Making a Commitment to Environmental Sustainability</h2>
+                <p>1 week ago</p>
+            </article>
+            <article class="article">
+                <img src="img/food.jpg" alt="Food">
+                <span class="tag food">Food</span>
+                <h2>Stunning Health Benefits of Eating Chocolates</h2>
+                <p>1 week ago</p>
+            </article>
+        </section>
+        
+        <section class="latest-posts">
+            <h2>Latest Posts</h2>
+            <div class="post-grid">
+                <article class="post">
+                    <img src="img/lifestyle.jpg" alt="Lifestyle">
+                    <h3>How to Improve Your Daily Routine</h3>
+                    <p>Discover simple tips to enhance your everyday life.</p>
+                </article>
+                <article class="post">
+                    <img src="img/travel.jpg" alt="Travel">
+                    <h3>Top 10 Travel Destinations for 2025</h3>
+                    <p>Explore the best places to visit this year.</p>
+                </article>
+                <article class="post">
+                    <img src="img/health.jpg" alt="Health">
+                    <h3>Healthy Eating: What You Need to Know</h3>
+                    <p>Learn how to maintain a balanced diet for a healthier life.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Voice Magazine. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
